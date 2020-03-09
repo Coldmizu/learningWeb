@@ -25,7 +25,8 @@ public class CustomerServiceTest {
     }
     @Test
     public void getCustomerListTest() throws Exception{
-        List<Customer> customerList = service.getCustomerList("");
+        List<Customer> customerList = service.getCustomerList();
+        System.out.println(customerList);
         Assert.assertEquals(2,customerList.size());
     }
 
